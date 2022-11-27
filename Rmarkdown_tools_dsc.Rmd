@@ -1,5 +1,5 @@
 ---
-title: "hello_world_rmarkdown"
+title: "Semana 4 > Rmarkdown > Jonhs Hopkins Universy"
 author: "Carlos Cruz"
 date: "2022-11-27"
 output: html_document
@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(rmarkdown)
 ```
-### Pacotes utilizado
+### Pacote utilizado:
 ```{r, message = FALSE}
 library(viridis)
 ```
@@ -19,13 +19,12 @@ O markdown é uma linguagem de marcação em texto simples, baseada no paradigma
 
 Após essa introdução, de grosso modo, referente ao que é o rmarkdown, irei começar a fazer minhas anotações sobre o start de meus estudos nessa linguagem de marcação poderosa.   
 
+Por que usá-lo? O Rmarkdown é utilizado para garantir a reprodutibilidade. Além de ser uma excelente ferramenta, na qual faz uso do literate programmming.
+
 #### **Chunk Options**
 A saída do pedaço pode ser personalizada com opções do knitr , argumentos definidos no "{}" de um cabeçalho de bloco.
 
 1.0 - [ include = FALSE ] Impede que o código e os resultados apareçam no arquivo finalizado. R Markdown ainda executa o código no bloco e os resultados podem ser usados por outros blocos.
-```{r}
-image: ![include](\tools_data_sciense\to\images_used_RMD_helloworld)
-```
 
 1.1 - [ echo = FALSE ] Impede que o código, mas não os resultados apareçam no arquivo finalizado. Esta é uma maneira útil de incorporar figuras.
 
@@ -37,9 +36,40 @@ image: ![include](\tools_data_sciense\to\images_used_RMD_helloworld)
 
 Consultar o [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) para obeter uma lista completa de knitr chunk options.
 
+#### **Syntax Rmarkdown**
+Os comandos a seguir podem ser utilizados para estilizar a sintaxe do arquivo.Rmd. Assim, possibilita uma melhor estética no literate programming.
 
-#### __References__
+[ # ] "texto" = titulo 
 
-[Codes Chunks](https://rmarkdown.rstudio.com/lesson-3.html)
+[ ## ] "texto" = titulo 
+
+[ ### ] "texto" = titulo 
+
+[ #### ] "texto" = titulo 
+
+[ ##### ] "texto" = titulo 
+
+[ ###### ] "texto" = titulo 
+
+##### Plain text
+
+[ *itálico* ] =  *
+
+[ **negrito** ] = **
+
+#### **Opções Globais**
+Para definir opções globais que se aplicam a cada parte do seu arquivo, chame:
+
+1.0 - knitr::opts_chunk$set Em um pedaço de código. O knitr tratará cada opção que passar.
+
+1.1 - knitr::opts_chunk$set Como um padrão global que pode ser substituído em cabeçalhos de blocos individuais.
+
+#### __References Guide__
+
+https://rmarkdown.rstudio.com/lesson-3.html
 
 https://www.coursera.org/learn/data-scientists-tools/lecture/134kE/r-markdown
+
+https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
+
+http://cursos.leg.ufpr.br/prr/capMarkdown.html#imagens
