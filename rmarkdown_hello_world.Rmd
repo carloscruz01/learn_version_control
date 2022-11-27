@@ -1,0 +1,45 @@
+---
+title: "hello_world_rmarkdown"
+author: "Carlos Cruz"
+date: "2022-11-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+```
+### Pacotes utilizado
+```{r, message = FALSE}
+library(viridis)
+```
+# R Markdown
+
+O markdown é uma linguagem de marcação em texto simples, baseada no paradigma de literate programming. Ou seja, esse paradigma refere-se ao uso de uma linguagem legível para humanos. 
+
+Após essa introdução, de grosso modo, referente ao que é o rmarkdown, irei começar a fazer minhas anotações sobre o start de meus estudos nessa linguagem de marcação poderosa.   
+
+#### **Chunk Options**
+A saída do pedaço pode ser personalizada com opções do knitr , argumentos definidos no "{}" de um cabeçalho de bloco.
+
+1.0 - [ include = FALSE ] Impede que o código e os resultados apareçam no arquivo finalizado. R Markdown ainda executa o código no bloco e os resultados podem ser usados por outros blocos.
+```{r}
+image: ![include](\tools_data_sciense\to\images_used_RMD_helloworld)
+```
+
+1.1 - [ echo = FALSE ] Impede que o código, mas não os resultados apareçam no arquivo finalizado. Esta é uma maneira útil de incorporar figuras.
+
+1.2 - [ message = FALSE ] Impede que mensagens geradas por código apareçam no arquivo finalizado.
+
+1.3 - [ warning = FALSE ] Impede que os avisos gerados pelo código apareçam no final.
+
+1.4 - [ fig.cap = "..." ] Adiciona uma legenda aos resultados gráficos.
+
+Consultar o [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) para obeter uma lista completa de knitr chunk options.
+
+
+#### __References__
+
+[Codes Chunks](https://rmarkdown.rstudio.com/lesson-3.html)
+
+https://www.coursera.org/learn/data-scientists-tools/lecture/134kE/r-markdown
