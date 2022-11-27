@@ -1,0 +1,51 @@
+---
+title: "Tipos de Perguntas sobre a Ciência de Dados"
+author: "Carlos Cruz"
+date: "2022-11-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### Pacote Utilizado:
+```{r}
+library(knitr)
+```
+# **Tipos de perguntas sobre ciência de dados**
+#### As principais divisões das questões de ciência de dados
+
+Existem, de modo geral, seis categorias:
+
+  1. Descritivo
+  2. Exploratório
+  3. Inferencial
+  4. Preditivo
+  5. Causal
+  6. Mecanicista
+
+### **1. Análise descritiva**
+
+  O objetivo da análise descrtiva é **descrever** ou **resumir** um conjunto de dados. Após receber um conjunto de dados, geralmente, esse é o primeiro tipo de análise feita para resumir à amostra.
+  
+### **2. Análise Exploratória**
+
+  O objetivo da análise exploratória é **examinar** ou **explorar** um conjunto de dados e encontrar relações que não eram conhecidas anterioremente. Observação: Esse tipo de análise não deve ser a palavra final sobre por que ou como os dados podem estar relacionados entre si. **Tudo o que a análise exploratória pode dizer é que existe uma relação, não a causa**.
+
+### **3. Análise inferencial**
+  
+  O objetivo das análises inferenciais é usar uma amostra relativamente pequena de dados para inferir ou dizer algo sobre a população em geral. A análise inferencial é geralmente o objetivo da modelagem estatística, onde você tem uma pequena quantidade de informações para extrapolar e generalizar essas informações para um grupo maior. 
+  
+  **Exemplo:** Um exemplo melhor de análise inferencial é um estudo no qual um subconjunto da população dos EUA foi analisado quanto à sua expectativa de vida, dado o nível de poluição do ar que experimentaram. Este estudo usa os dados coletados de uma amostra da população dos EUA para inferir como a poluição do ar pode estar afetando a expectativa de vida em todo o país. 
+  
+### **4. Análise preditiva **
+
+  O objetivo da análise preditiva é usar dados atuais para fazer previsões sobre dados futuros . Essencialmente, você está usando dados atuais e históricos para encontrar padrões e prever a probabilidade de resultados futuros. **Exemplo:** Pegar um conjunto de dados atuais da **bolsa de valores** e **fazer previsões** sobre dados futuros.
+  
+### **5. Análise Causal**
+
+  A advertência para muitas das análises que vimos até agora é que só podemos ver correlações e não podemos chegar à causa das relações que observamos. **A análise causal preenche essa lacuna; o objetivo da análise causal é ver o que acontece com uma variável quando manipulamos outra variável** - observando a causa e o efeito de uma relação.
+  
+### **6. Análise Mecanística** 
+
+  As análises mecanísticas não são tão comumente usadas quanto as análises anteriores – o objetivo da análise mecanicista é entender as mudanças exatas nas variáveis que levam a mudanças exatas em outras variáveis . Essas análises são extremamente difíceis de usar para inferir muito, exceto em situações simples ou naquelas bem modeladas por equações determinísticas. Dada esta descrição, pode ser claro ver como as análises mecanísticas são mais comumente aplicadas às ciências físicas ou de engenharia; as ciências biológicas, por exemplo, têm conjuntos de dados muito ruidosos para usar a análise mecanicista. Muitas vezes, quando essas análises são aplicadas, o único ruído nos dados é o erro de medição, que pode ser contabilizado. 
